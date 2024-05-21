@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 800
+      min-spare: 30
+
+spring:
+  application:
+    name: mfw-gateway
+  profiles:
+    active: dev
+
+logging:
+  level:
+    com.zdf: debug
+    org.springframework: warn
